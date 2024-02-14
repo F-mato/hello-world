@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List with Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>予定リスト</h1>
+
+    <div id="datetime"></div>
+
+    <div class="app">
+        <input id="taskInput" type="text" placeholder="予定や内容を入力してください" required>
+        <input id="taskDate" type="date" required>
+        <input id="taskTime" type="time" required>
+        <button onclick="addTask()" id="saveToDatabase">内容決定</button>
+        <ul id="tasksList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

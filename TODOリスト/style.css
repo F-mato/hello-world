@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+}
+
+.app {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    background-color: #eee;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+div#datetime {
+    text-align: center;
+}
+
+button {
+    display: block; /* ブロック要素として表示 */
+    margin: 0 auto; /* 上下のマージンを0にし、左右のマージンを自動で調整して中央揃え */
+    padding: 10px 20px; /* ボタンの内側の余白（上下10px、左右20px） */
+    cursor: pointer; /* ホバー時のカーソルをポインターに */
+}
