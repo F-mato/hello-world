@@ -1,0 +1,63 @@
+:root {
+  --bg-color: rgb(209, 209, 209);
+  --type-Speed: 6s;
+  --type-Size: 20;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", monospace;
+  background-color: var(--bg-color);
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+main {
+  text-align: center;
+}
+
+main h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  position: relative;
+  overflow: hidden;
+}
+
+main h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+main h1::before {
+  animation: typeWrite var(--type-Speed) steps(var(--type-Size)) 1s forwards;
+  background: var(--bg-color);
+}
+
+main h1::after {
+  animation: typeWrite var(--type-Speed) steps(var(--type-Size)) 1s forwards,
+    blink 500ms steps(var(--type-Size)) infinite;
+  background: black;
+  width: 0.1em;
+}
+
+@keyframes typeWrite {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
