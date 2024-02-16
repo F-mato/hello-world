@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:800,900");
+
+:root {
+  --colors: 1500ms;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background: #1e152a;
+}
+
+h1 {
+  color: black;
+  font-size: 10rem;
+  font-weight: 900;
+  letter-spacing: 15px;
+  /* margin: 0;
+  text-transform: uppercase;
+  text-align: center; */
+}
+
+.container h1 {
+  color: #99eedf;
+}
+                                                            /* spanで囲んだ文字一つ一つの変化 */
+.container h1 span:nth-child(1) {
+  animation: colors var(--colors) infinite alternate;       /* alternateは1-5までの点滅間隔を行う */     
+}
+.container h1 span:nth-child(2) {
+  animation: colors var(--colors) 0.2s infinite alternate;  /* alternateは1-5までの点滅間隔を行う */
+}
+.container h1 span:nth-child(3) {
+  animation: colors var(--colors) 0.4s infinite alternate;  /* alternateは1-5までの点滅間隔を行う */
+}
+.container h1 span:nth-child(4) {
+  animation: colors var(--colors) 0.6s infinite alternate;   /* alternateは1-5までの点滅間隔を行う */
+}
+.container h1 span:nth-child(5) {
+  animation: colors var(--colors) 0.8s infinite alternate;   /* alternateは1-5までの点滅間隔を行う */
+}
+                                                             /* アニメーションの動き点滅 */
+@keyframes colors {
+  0% {
+    color: #eff7ff;
+  }
+  25% {
+    color: #e8db7d;
+  }
+  50% {
+    color: #558c8c;
+  }
+  75% {
+    color: #82204a;
+  }
+  100% {
+    color: #eff7ff;
+  }
+}
